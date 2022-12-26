@@ -127,6 +127,7 @@
 :root[tabsintitlebar] #titlebar .titlebar-button .toolbarbutton-icon,
 :root[tabsintitlebar][inFullscreen] #window-controls toolbarbutton .toolbarbutton-icon {
 	width: 19px;
+	height: 15px;
 }
 
 /* OPTIONAL: Allow draging the window from headerbar buttons */

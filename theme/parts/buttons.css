@@ -2,6 +2,13 @@
 
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
+@media (-moz-gtk-csd-available) {
+	.titlebar-button:-moz-lwtheme {
+		appearance: auto !important;
+		border-radius: 100%;
+	}
+}
+
 /* Hide buttons separator */
 #nav-bar .toolbaritem-combined-buttons separator {
 	display: none !important;
