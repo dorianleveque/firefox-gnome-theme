@@ -93,11 +93,6 @@
 	margin-bottom: 8px;
 }
 
-/* Remove default style of titlebar */
-:root[tabsintitlebar] #titlebar {
-	-moz-appearance: none !important;
-}
-
 /* Fix the issue when dragging tabs */
 :root[tabsintitlebar] #navigator-toolbox[movingtab] #TabsToolbar {
 	padding-bottom: 0 !important;
@@ -105,31 +100,15 @@
 
 /* Window buttons box */
 :root[tabsintitlebar] #titlebar .titlebar-buttonbox-container {
-	-moz-appearance: none !important;
-	padding: 5px;
 	position: absolute !important;	
 	right: 0;
 	top: 0;
 	display: block !important;
-}
-:root[tabsintitlebar] #titlebar .titlebar-buttonbox {
-	-moz-appearance: none !important;
+	height: 45px;
 }
 
-/* Window buttons style */
-:root[tabsintitlebar] #titlebar .titlebar-button,
-:root[tabsintitlebar][inFullscreen] #window-controls toolbarbutton {
-	-moz-appearance: none !important;
-	padding: 0 2px !important;
-	background: var(--gnome-button-close-background);
-	transition: 0.3s;
-}
-
-:root[tabsintitlebar] #titlebar .titlebar-button {
-	border-radius: 100% !important;
-	height: 24px !important;
-	margin: 6px 6.5px !important;
-	width: 24px !important;
+:root[tabsintitlebar] .titlebar-buttonbox {
+	height: 100%;
 }
 
 :root[tabsintitlebar][inFullscreen] #window-controls toolbarbutton {
@@ -147,23 +126,7 @@
 
 :root[tabsintitlebar] #titlebar .titlebar-button .toolbarbutton-icon,
 :root[tabsintitlebar][inFullscreen] #window-controls toolbarbutton .toolbarbutton-icon {
-	width: 16px;
-}
-:root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-button,
-:root[tabsintitlebar][inFullscreen] #window-controls:-moz-window-inactive toolbarbutton {
-	background: var(--gnome-inactive-tabbar-tab-active-background);
-}
-:root[tabsintitlebar] #titlebar:not(:-moz-window-inactive) .titlebar-button:not([disabled]):hover,
-:root[tabsintitlebar][inFullscreen] #window-controls:not(:-moz-window-inactive) toolbarbutton:not([disabled]):hover {
-	background: var(--gnome-button-hover-background);
-}
-:root[tabsintitlebar] #titlebar:not(:-moz-window-inactive) .titlebar-button:not([disabled]):active,
-:root[tabsintitlebar][inFullscreen] #window-controls:not(:-moz-window-inactive) toolbarbutton:not([disabled]):active {
-	background: var(--gnome-button-active-close-background);
-}
-
-:root[tabsintitlebar] #titlebar .titlebar-button:where(:hover):not(:hover) {
-	background: var(--gnome-button-hover-close-background) !important;
+	width: 19px;
 }
 
 /* OPTIONAL: Allow draging the window from headerbar buttons */

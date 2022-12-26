@@ -74,7 +74,7 @@ button.close,
 .notification-button,
 .subviewbutton.panel-subview-footer:not(:only-of-type),
 .panel-footer button:not(:only-of-type) {
-	margin: 0 3px !important;
+	margin: 0 1px !important;
 }
 .close-icon:not(.tab-close-button) {
 	margin-left: 6px !important;
